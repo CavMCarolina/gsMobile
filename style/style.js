@@ -1,9 +1,19 @@
 import { StyleSheet } from 'react-native';
 
+// Cores
+const corBG = '#29262cff';
+const corTexto = '#ecececff';
+const corPrimaria = '#7800ff';
+const corSecundaria = '#9c47ff';
+
+// Fontes
+const textoNormal = 'Quantico_400Regular';
+const textoNegrito = 'Quantico_700Bold';
+
 export default StyleSheet.create({
   // Tela de Login
   container: {
-    backgroundColor: '#29262cff',
+    backgroundColor: corBG,
     height: '100%',
     padding: 40,
   },
@@ -18,37 +28,37 @@ export default StyleSheet.create({
   },
   titulo: {
     fontSize: 24,
-    fontFamily: 'Quantico_700Bold',
-    color: '#7800ff',
+    fontFamily: textoNegrito,
+    color: corPrimaria,
     letterSpacing: 2
   },
   texto: {
     fontSize: 16,
-    fontFamily: 'Quantico_400Regular',
-    color: '#ecececff',
+    fontFamily: textoNormal,
+    color: corTexto,
     letterSpacing: 1.3
   },
   input: {
     marginTop: 15,
     paddingHorizontal: 20,
     borderWidth: 1,
-    borderColor: '#7800ff',
+    borderColor: corPrimaria,
     borderRadius: 5,
-    color: '#ecececff',
-    fontFamily: 'Quantico_400Regular',
+    color: corTexto,
+    fontFamily: textoNormal,
     letterSpacing: 1.3
   },
   botao : {
     padding: 15,
     marginTop: 20,
-    backgroundColor: '#7800ff',
+    backgroundColor: corPrimaria,
     borderRadius: 5,
     alignItems: 'center',
   },
   textoBotao: {
     fontSize: 18,
-    fontFamily: 'Quantico_400Regular',
-    color: '#ecececff',
+    fontFamily: textoNormal,
+    color: corTexto,
     letterSpacing: 2
   },
 });
