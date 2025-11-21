@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import styles from '../style/style.js';
