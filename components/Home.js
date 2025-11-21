@@ -82,7 +82,7 @@ export default function Home() {
       {trilhasFiltradas.map((item) => (
         <View key={item.id} style={styles.card}>
           <View style={styles.cardHeader}>
-            <Text style={styles.cardTitulo}>{item.titulo}</Text>
+            <Text style={styles.tituloRoxo}>{item.titulo}</Text>
             <Text style={styles.cardCarga}>{item.carga}</Text>
           </View>
           <Text style={styles.cardDescricao}>{item.descricao}</Text>

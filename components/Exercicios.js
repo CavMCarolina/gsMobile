@@ -78,7 +78,7 @@ export default function Exercicios() {
         <View key={ex.id} style={styles.exercicioContainer}>
           {/* Bolinha */}
           <View style={styles.bolinha}>
-            <Text style={styles.tituloBolinha}>
+            <Text style={styles.tituloBranco}>
               {ex.id}
             </Text>
           </View>

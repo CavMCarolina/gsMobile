@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { View, Text, TextInput, Button, Alert, Image, TouchableOpacity } from 'react-native';
 import styles from '../style/style.js';
 
-export default function LoginScreen({ navigation }) {
+export default function Login({ navigation }) {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 

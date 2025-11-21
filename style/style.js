@@ -110,7 +110,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center'
   },
-  cardTitulo: {
+  tituloRoxo: {
     fontSize: 20,
     fontFamily: textoNegrito,
     color: corPrimaria,
@@ -141,7 +141,7 @@ export default StyleSheet.create({
     elevation: 10,
     marginBottom: 8
   },
-  tituloBolinha: {
+  tituloBranco: {
     color: corTextoClaro,
     fontFamily: textoNegrito,
     fontSize: 20,
@@ -170,6 +170,48 @@ export default StyleSheet.create({
     backgroundColor: '#9237fa', // cor diferente para destacar
     borderRadius: 5,
     alignItems: 'center',
+  },
+  // Tela Perfil
+  perfilContainer: {
+    alignItems: 'center',
+    marginBottom: 30,
+  },
+  perfilImagem: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    borderWidth: 3,
+    borderColor: corPrimaria,
+    marginBottom: 15,
+  },
+  perfilEmail: {
+    fontSize: 14,
+    fontFamily: textoNormal,
+    color: '#ccc',
+    marginTop: 5,
+  },
+  statsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 30,
+  },
+  statBox: {
+    alignItems: 'center',
+  },
+  badgesContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginVertical: 20,
+  },
+  badge: {
+    alignItems: 'center',
+  },
+  badgeIcon: {
+    fontSize: 28,
+  },
+  botoesContainer: {
+    marginTop: 20,
+    gap: 10
   }
 });
 
