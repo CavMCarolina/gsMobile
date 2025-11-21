@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native';
 
 // Cores
 const corBG = '#29262cff';
-const corTexto = '#ecececff';
+const corTextoClaro = '#ecececff';
 const corPrimaria = '#7800ff';
-const corSecundaria = '#9237faff';
+const corTextoEscuro = '#333333ff';
 
 // Fontes
 const textoNormal = 'Quantico_400Regular';
@@ -12,7 +12,7 @@ const textoNegrito = 'Quantico_700Bold';
 
 export default StyleSheet.create({
   // Tela de Login
-  container: {
+  loginBG: {
     backgroundColor: corBG,
     height: '100%',
     padding: 40,
@@ -35,7 +35,7 @@ export default StyleSheet.create({
   texto: {
     fontSize: 16,
     fontFamily: textoNormal,
-    color: corTexto,
+    color: corTextoClaro,
     letterSpacing: 1.3
   },
   input: {
@@ -44,7 +44,7 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: corPrimaria,
     borderRadius: 5,
-    color: corTexto,
+    color: corTextoClaro,
     fontFamily: textoNormal,
     letterSpacing: 1.3
   },
@@ -58,7 +58,7 @@ export default StyleSheet.create({
   textoBotao: {
     fontSize: 18,
     fontFamily: textoNormal,
-    color: corTexto,
+    color: corTextoClaro,
     letterSpacing: 2
   },
   // Barra de Navegação
@@ -83,4 +83,48 @@ export default StyleSheet.create({
     borderWidth: 5,
     borderColor: corBG,
   },
+  // Tela Home
+  container: {
+    backgroundColor: corBG,
+    padding: 20,
+    paddingTop: 70
+  },
+  pickerContainer: {
+    backgroundColor: corBG, 
+    borderWidth: 1,  
+    overflow: 'hidden', 
+    borderColor: corPrimaria,
+    borderRadius: 50,
+    marginVertical: 20,
+    paddingHorizontal: 30,
+  },
+  card: {
+    backgroundColor: corTextoClaro,
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 15,
+    elevation: 10,
+  },
+  cardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  cardTitulo: {
+    fontSize: 20,
+    fontFamily: textoNegrito,
+    color: corPrimaria,
+  },
+  cardCarga: {
+    fontSize: 14,
+    fontFamily: textoNormal,
+    color: corPrimaria,
+  },
+  cardDescricao: {
+    fontSize: 16,
+    fontFamily: textoNormal,
+    color: corTextoEscuro,
+    marginTop: 8
+  }
 });
+
