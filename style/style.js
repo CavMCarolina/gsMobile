@@ -125,6 +125,31 @@ export default StyleSheet.create({
     fontFamily: textoNormal,
     color: corTextoEscuro,
     marginTop: 8
+  }, 
+  // Tela Exercícios
+  exercicioContainer: {
+    alignItems: 'center'
+  },
+  bolinha: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    backgroundColor: corPrimaria,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 10,
+    marginBottom: 8
+  },
+  tituloBolinha: {
+    color: corTextoClaro,
+    fontFamily: textoNegrito,
+    fontSize: 20,
+  },
+  linha :{
+    width: 4,
+    height: 40,
+    backgroundColor: corPrimaria,
+    marginVertical: 30
   }
 });
 
