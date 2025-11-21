@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-// Importa as fontes Quantico
-import { useFonts, Quantico_400Regular, Quantico_700Bold } from '@expo-google-fonts/quantico';
-
 import TabNavigator from './navigation/TabNavigation.js';
 import Login from './components/Login.js';
 
+// Importando Fontes
+import { useFonts, Quantico_400Regular, Quantico_700Bold } from '@expo-google-fonts/quantico';
+
+// Navegação Stack
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -32,6 +32,7 @@ export default function App() {
         />
         <Stack.Screen
           name="App"
+          // Ao entrar, redireciona para a navegação Tab
           component={TabNavigator}
           options={{ headerShown: false }}
         />

@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 const corBG = '#29262cff';
 const corTexto = '#ecececff';
 const corPrimaria = '#7800ff';
-const corSecundaria = '#9c47ff';
+const corSecundaria = '#9237faff';
 
 // Fontes
 const textoNormal = 'Quantico_400Regular';
@@ -60,5 +60,27 @@ export default StyleSheet.create({
     fontFamily: textoNormal,
     color: corTexto,
     letterSpacing: 2
+  },
+  // Barra de Navegação
+  tabBar: {
+    backgroundColor: corPrimaria,
+    height: 60,
+    borderTopWidth: 0,
+    paddingTop: 9
+  },
+  iconContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  activeIconContainer: {
+    backgroundColor: corPrimaria,
+    borderRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: -50,
+    width: 65,
+    height: 65,
+    borderWidth: 5,
+    borderColor: corBG,
   },
 });
