@@ -30,7 +30,8 @@ export default StyleSheet.create({
     fontSize: 24,
     fontFamily: textoNegrito,
     color: corPrimaria,
-    letterSpacing: 2
+    letterSpacing: 2,
+    marginBottom: 20
   },
   texto: {
     fontSize: 16,
@@ -39,7 +40,7 @@ export default StyleSheet.create({
     letterSpacing: 1.3
   },
   input: {
-    marginTop: 15,
+    marginBottom: 20,
     paddingHorizontal: 20,
     borderWidth: 1,
     borderColor: corPrimaria,
@@ -50,7 +51,6 @@ export default StyleSheet.create({
   },
   botao : {
     padding: 15,
-    marginTop: 20,
     backgroundColor: corPrimaria,
     borderRadius: 5,
     alignItems: 'center',
@@ -95,7 +95,7 @@ export default StyleSheet.create({
     overflow: 'hidden', 
     borderColor: corPrimaria,
     borderRadius: 50,
-    marginVertical: 20,
+    marginBottom: 20,
     paddingHorizontal: 30,
   },
   card: {
@@ -124,7 +124,8 @@ export default StyleSheet.create({
     fontSize: 16,
     fontFamily: textoNormal,
     color: corTextoEscuro,
-    marginTop: 8
+    marginTop: 8,
+    marginBottom: 20
   }, 
   // Tela Exercícios
   exercicioContainer: {
@@ -150,6 +151,25 @@ export default StyleSheet.create({
     height: 40,
     backgroundColor: corPrimaria,
     marginVertical: 30
+  },
+  // Tela Meus Cursos
+  progressBar: {
+    height: 12,
+    backgroundColor: '#ccc',
+    borderRadius: 6,
+    marginTop: 12,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: corPrimaria,
+  },
+  botaoCertificado: {
+    padding: 15,
+    marginTop: 20,
+    backgroundColor: '#9237fa', // cor diferente para destacar
+    borderRadius: 5,
+    alignItems: 'center',
   }
 });
 
