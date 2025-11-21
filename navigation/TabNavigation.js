@@ -22,7 +22,7 @@ export default function TabNavigator() {
         tabBarIcon: ({ focused }) => {
           const iconName =
             route.name === 'Trilhas' ? 'home' :
-            route.name === 'Treine' ? 'ribbon' :
+            route.name === 'Treine' ? 'barbell' :
             route.name === 'Meus Cursos' ? 'school' :
             'person';
 
